@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Farm Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cce8ff;
+            margin: 0;
+            padding: 0;
+        }
+        #game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .house {
+            width: 100px;
+            height: 100px;
+            background-color: #8B4513;
+            position: relative;
+        }
+        .roof {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid #A52A2A;
+            position: absolute;
+            top: -50px;
+            left: 0;
+        }
+        .garden-bed {
+            width: 40px;
+            height: 20px;
+            background-color: #556B2F;
+            margin: 10px;
+        }
+        .garden {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div class="house">
+            <div class="roof"></div>
+        </div>
+        <div class="garden">
+            <div class="garden-bed"></div>
+            <div class="garden-bed"></div>
+            <div class="garden-bed"></div>
+        </div>
+    </div>
+</body>
+</html>
