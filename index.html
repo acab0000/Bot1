@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Farm Game</title>
+    <title>Farm Game</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #cce8ff;
-            margin: 0;
-            padding: 0;
+            background-color: #bce4a7;
+            font-family: 'Arial', sans-serif;
         }
-        #game-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 50px;
+        .container {
+            text-align: center;
+            padding: 20px;
         }
         .house {
             width: 100px;
             height: 100px;
             background-color: #8B4513;
             position: relative;
+            margin: auto;
         }
         .roof {
             width: 0;
@@ -34,26 +30,39 @@
             top: -50px;
             left: 0;
         }
-        .garden-bed {
-            width: 40px;
-            height: 20px;
-            background-color: #556B2F;
-            margin: 10px;
-        }
         .garden {
             display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .bed {
+            width: 50px;
+            height: 50px;
+            background-color: #DEB887;
+            margin: 5px;
+            position: relative;
+        }
+        .crop {
+            width: 30px;
+            height: 30px;
+            background-color: #32CD32;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
     </style>
 </head>
 <body>
-    <div id="game-container">
+    <div class="container">
+        <h1>Welcome to the Pixel Art Farm Game!</h1>
         <div class="house">
             <div class="roof"></div>
         </div>
         <div class="garden">
-            <div class="garden-bed"></div>
-            <div class="garden-bed"></div>
-            <div class="garden-bed"></div>
+            <div class="bed"><div class="crop"></div></div>
+            <div class="bed"><div class="crop"></div></div>
+            <div class="bed"><div class="crop"></div></div>
         </div>
     </div>
 </body>
